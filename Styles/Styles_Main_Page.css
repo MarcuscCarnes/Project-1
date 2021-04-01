@@ -26,7 +26,7 @@ body
 header
 {
     height: 100px;
-    background: #262626;
+    background: black;
     width: 100%;
     z-index: 12;
     position: fixed;
@@ -50,33 +50,55 @@ nav a
     letter-spacing: 4px;
     font-size: 20px;
     margin: 0 10px;
-    color: #fff;
+    color: #d8a910;
 }
 
 nav a:hover
 {
     transition: 1s;
-    text-shadow: #ffffff 0 0 1em;
+    text-shadow: #ffde72 0 0 1.5em;
 }
-
-#register
+/*Makin' it look GOOOOOOOOD*/
+.banner
 {
+    background-image: url(https://images.pexels.com/photos/826282/pexels-photo-826282.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+    padding: 20vh 0;
+    background-size: cover;
+    /*text-align: center;*/
+    position: relative;
     font-weight: 900;
-    color: #fff;
-    margin-top: 10rem;
+    color: rgb(0, 0, 0);
 }
 
-#register h3
+.banner > *
+{
+    z-index: 10;
+    position: relative;
+}
+.banner::after
+{
+    content: ""; /*after requires content in order to function*/
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: .7;
+    z-index: 0;
+}
+
+.banner h3
 {
     font-size: 60px;
     margin-bottom: 10px;
-    margin-left: 2rem; 
+    margin-left: 12rem;
 }
 
-#register p
+.banner p
 {  
-    font-size: 24px;
-    margin-left: 2rem; 
+    font-size: 28px;
+    margin-left: 12rem;
 }
 
 
@@ -91,7 +113,7 @@ nav a:hover
 {
     display: flex;
     align-items: center;
-    margin: 3rem 0;
+    margin: 0;
     padding: 1%;
 }
 
@@ -171,7 +193,7 @@ footer
     
     color: #886b0d;
     text-align: center;
-    font-size: 1.3rem;
+    font-size: 2rem;
 
     position: relative;
 }
@@ -186,7 +208,7 @@ footer a
 footer a:hover 
 {
     transition: 1s;
-    text-shadow: #ffffff 0 0 1em;
+    text-shadow: #ffce2f 0 0 2em;
 }
 
 footer ul
