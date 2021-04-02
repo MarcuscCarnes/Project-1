@@ -3,20 +3,27 @@
     <head>
         <meta charset="UTF-8">
         <title>Bingus Hotels & Resorts | Restaurants</title>
-        <link href="restaurants.css" rel="stylesheet" />
-        <script src="restaurants.js" type="text/javascript"></script>
+        <link href="/Styles/restaurants.css" rel="stylesheet" />
+        <script src="/Scripts/restaurants.js" type="text/javascript"></script>
+        <script>
+            function myFunction() {
+                alert ("Hello World!")
+            };
+        </script> 
     </head>
 
     <body>
         <header>
             <!-- <h1>Bingus Hotels and Resorts</h1> -->
-            <img src="BingusLogo.png" alt="Bingus Hotels and Resorts Logo">
+            <a href="MainPage.html">
+                <img src="/Images/BingusLogo.png" alt="Bingus Hotels and Resorts Logo">
+            </a>
             <nav>
                 <ul>
                     <li><a href="rooms.html">Book a Room</a></li>
-                    <li><a href="casino.html">Casino</a></li>
+                    <li><a href="Casino.html">Casino</a></li>
                     <li><a class="active" href="restaurants.html">Restaurants</a></li>
-                    <li style="float:right"><a href="login.html">Login/Sign Up</a></li>
+                    <li style="float:right"><a href="Login.html">Login/Sign Up</a></li>
                 </ul>
             </nav>
         </header>
@@ -24,16 +31,16 @@
         <section id="content">
             <h1>Restaurants</h1>
             <div class="row1">
-                <div class="restaurant" id="r1">
-                    <img src="Bills.jpg" />
+                <div class="restaurant" id="r1" onclick="myFunction()">
+                    <img src="/Images/Bills.jpg" />
                     <h3>Bill's Restaurant & Bar</h3>
                 </div>
                 <div class="restaurant" id="r2">
-                    <img src="Mirchi.png" />
+                    <img src="/Images/Mirchi.png" />
                     <h3>Mirchi</h3>
                 </div>
                 <div class="restaurant" id="r3">
-                    <img src="Sunbean.jpg" />
+                    <img src="/Images/Sunbean.jpg" />
                     <h3>Sunbean Cafe & Restaurant</h3>
                 </div>
             </div>
