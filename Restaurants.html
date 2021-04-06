@@ -4,17 +4,11 @@
         <meta charset="UTF-8">
         <title>Bingus Hotels & Resorts | Restaurants</title>
         <link href="/Styles/restaurants.css" rel="stylesheet" />
-        <script src="/Scripts/restaurants.js" type="text/javascript"></script>
-        <script>
-            function myFunction() {
-                alert ("Hello World!")
-            };
-        </script> 
+        <script src="/Scripts/restaurants.js"></script>
     </head>
 
     <body>
         <header>
-            <!-- <h1>Bingus Hotels and Resorts</h1> -->
             <a href="MainPage.html">
                 <img src="/Images/BingusLogo.png" alt="Bingus Hotels and Resorts Logo">
             </a>
@@ -31,28 +25,40 @@
         <section id="content">
             <h1>Restaurants</h1>
             <div class="row1">
-                <div class="restaurant" id="r1" onclick="myFunction()">
-                    <img src="/Images/Bills.jpg" />
+                <div class="restaurant" id="r1" onclick="r1()">
+                    <img src="/Images/Bills.jpg" onmouseover="this.src='/Images/PrimeRib.jpg';" onmouseout="this.src='/Images/Bills.jpg';"/>
                     <h3>Bill's Restaurant & Bar</h3>
                 </div>
-                <div class="restaurant" id="r2">
-                    <img src="/Images/Mirchi.png" />
+                <div class="restaurant" id="r2" onclick="r2()">
+                    <img src="/Images/Mirchi.png" onmouseover="this.src='/Images/VegetableSamosa.jpg';" onmouseout="this.src='/Images/Mirchi.png';"/>
                     <h3>Mirchi</h3>
                 </div>
-                <div class="restaurant" id="r3">
-                    <img src="/Images/Sunbean.jpg" />
+                <div class="restaurant" id="r3" onclick="r3()">
+                    <img src="/Images/Sunbean.jpg" onmouseover="this.src='/Images/CroissantSandwich.jpg';" onmouseout="this.src='/Images/Sunbean.jpg';"/>
                     <h3>Sunbean Cafe & Restaurant</h3>
                 </div>
             </div>
+            <div class="restaurantInfo" id="r1Info">
+                <h4>Bill's Restaurant & Bar</h4>
+                <p>Location: Down the south hall of the first floor<br>Featured Menu Items: Prime Rib, Fettuccine Alfredo, and Chicken Fried Chicken</p>
+            </div>
+            <div class="restaurantInfo" id="r2Info">
+                <h4>Mirchi</h4>
+                <p>Location: Across the lobby on the first floor<br>Featured Menu Items: Vegetable Samosa, Chicken Curry, and Chicken Tikka Masala</p>
+            </div>
+            <div class="restaurantInfo" id="r3Info">
+                <h4>Sunbean Cafe & Restaurant</h4>
+                <p>Location: On the first floor to the east of the casino floor<br>Featured Menu Items: Bacon Egg and Cheese Croissant Sandwich, Cappuccino, Meat and Cheese Omelet</p>
+            </div>
             <div class="row2">
-                <div class="restaurant" id="r4">
-                    <img src="http://placekitten.com/150/150" />
-                    <h3>Restaurant 4</h3>
+                <div class="restaurant" id="r4" onclick="r4()">
+                    <img src="/Images/Tastyburgers.jpg" onmouseover="this.src='/Images/BaconCheeseburger.jpg';" onmouseout="this.src='/Images/Tastyburgers.jpg';"/>
+                    <h3>Tastyburgers</h3>
                 </div>
-                <div class="restaurant" id="r5">
-                    <img src="http://placekitten.com/150/150" />
-                    <h3>Restaurant 5</h3>
-                </div>
+            </div>
+            <div class="restaurantInfo" id="r4Info">
+                <h4>Tastyburgers</h4>
+                <p>Location: Across the elevators on the second floor<br>Featured Menu Items: Bacon Cheeseburger, Old Fashion Burger, and Loaded Fries</p>
             </div>
         </section>
 
