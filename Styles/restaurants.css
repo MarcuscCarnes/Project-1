@@ -1,60 +1,52 @@
 body {
     display: block;
     margin: auto;
-    background-color: white;
+    background-color: black;
+    font-family: bignoodletitling;
 }
 
 /* Header */
-header {
-    display: block;
-    background-color: tan;
+.wrapper {
+    width: 1170px;
+    margin: 0 auto;
 }
 
-header img {
+header {
+    height: 100px;
+    background: black;
+    width: 100%;
+    z-index: 12;
+    position: fixed;
+}
+
+.logo{
     float: left;
 }
 
 nav {
-    line-height: 200px;
+    float: right;
+    line-height: 100px;
 }
 
-nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: tan;
-    
-}
-
-nav ul li {
-    float: left;
-}
-
-nav ul li:last-child {
-    border-right: none;
-}  
-
-nav ul li a {
-    display: block;
-    padding: 14px 16px;
-    
-    color: red;
-    text-align: center;
+nav a {
     text-decoration: none;
+    font-family: bignoodletitling;
+    letter-spacing: 4px;
+    font-size: 20px;
+    margin: 0 10px;
+    color: #d8a910;
 }
 
-nav ul li a:hover:not(.active) {
-    background-color: rgb(156, 136, 109);
-    color: rgb(148, 12, 12);
-}
-
-.active {
-    background-color: red;
-    color: white;
+nav a:hover {
+    transition: 1s;
+    text-shadow: #ffde72 0 0 1.5em;
 }
 
 /* Contents */
+section h1 {
+    text-align: center;
+}
+
 .row1, .row2 {
     display: inline;
     
@@ -65,6 +57,7 @@ nav ul li a:hover:not(.active) {
     flex-direction: column;
     justify-content: space-around;
     padding: 0 20%;
+    background-color: bisque;
 }
 
 .row1 {
@@ -105,4 +98,37 @@ div h3 {
     background-color: tan;
     color: black;
     display: none;
+    text-align: center;
+}
+
+/* Footer */
+footer {
+    padding: 1.5rem 0;
+    background-color: black;
+    
+    color: #886b0d;
+    text-align: center;
+    font-size: 2rem;
+
+    position: relative;
+}
+
+footer a {
+    color: #886b0d;
+    text-emphasis: bold;
+    text-decoration: none;
+}
+
+footer a:hover {
+    transition: 1s;
+    text-shadow: #ffce2f 0 0 2em;
+}
+
+footer ul {
+    padding: 1rem;
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+
+    position: relative;
 }

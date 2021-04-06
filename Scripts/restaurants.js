@@ -1,10 +1,12 @@
 var infoOpen = false;
 
+// Closes a restaurant's info
 function closeInfo(x) {
     var y = document.getElementById(x);
     y.style.display = "none";
 }
 
+// Closes all of the restaurant infos
 function closeAllInfo() {
     closeInfo("r1Info");
     closeInfo("r2Info");
@@ -12,6 +14,7 @@ function closeAllInfo() {
     closeInfo("r4Info");
 }
 
+// Shows the first restaurant's info when clicking on it's grid element
 function r1() {
     var x = document.getElementById("r1Info");
     if (x.style.display === "none") {
@@ -26,6 +29,7 @@ function r1() {
     }
 }
 
+// Shows the second restaurant's info when clicking on it's grid element
 function r2() {
     var x = document.getElementById("r2Info");
     if (x.style.display === "none") {
@@ -40,6 +44,7 @@ function r2() {
     }
 }
 
+// Shows the third restaurant's info when clicking on it's grid element
 function r3() {
     var x = document.getElementById("r3Info");
     if (x.style.display === "none") {
@@ -54,6 +59,7 @@ function r3() {
     }
 }
 
+// Shows the fourth restaurant's info when clicking on it's grid element
 function r4() {
     var x = document.getElementById("r4Info");
     if (x.style.display === "none") {
