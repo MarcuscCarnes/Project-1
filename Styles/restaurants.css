@@ -5,6 +5,10 @@ body {
     font-family: bignoodletitling;
 }
 
+br {
+    background-color: bisque;
+}
+
 /* Header */
 .wrapper {
     width: 1170px;
