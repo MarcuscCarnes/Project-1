@@ -1,0 +1,124 @@
+html
+{
+	height: 100%;
+}
+
+body 
+{
+    background-color: tan;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/*tags*/
+h2
+{
+	text-align: center;
+}
+
+p
+{
+	text-align: center;
+	font-size: 28px; 
+}
+
+div h1
+{
+	color: red;
+}
+
+h1
+{
+	text-align: center;
+}
+
+h3
+{
+	text-align: center;
+	padding-top: 50px;
+}
+
+/*button*/ 
+button 
+{
+	text-align: center;
+}
+
+/*nav*/
+.wrapper
+{
+    width: 1170px;
+    margin: 0 auto;
+}
+
+header
+{
+    height: 100px;
+    background: black;
+    width: 100%;
+    z-index: 12;
+    position: fixed;
+}
+
+.logo
+{
+    float: left;
+}
+
+nav
+{
+    float: right;
+    line-height: 100px;
+}
+
+nav a
+{
+    text-decoration: none;
+    font-family: bignoodletitling;
+    letter-spacing: 4px;
+    font-size: 20px;
+    margin: 0 10px;
+    color: #d8a910;
+}
+
+nav a:hover
+{
+    transition: 1s;
+    text-shadow: #ffde72 0 0 1.5em;
+}
+/*footer*/
+footer 
+{
+    padding: 1.5rem 0;
+    
+    color: #886b0d;
+    text-align: center;
+    font-size: 2rem;
+    background-color: black;
+
+    position: relative;
+}
+
+footer a
+{
+    color: #886b0d;
+    text-emphasis: bold;
+    text-decoration: none;
+}
+
+footer a:hover 
+{
+    transition: 1s;
+    text-shadow: #ffce2f 0 0 2em;
+}
+
+footer ul
+{
+    padding: 1rem;
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+
+    position: relative;
+}
