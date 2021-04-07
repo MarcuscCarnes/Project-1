@@ -1,3 +1,10 @@
+/* 
+    Author:         Alex Mallett
+    Date:           4/3/2020
+    Assignment:     Project 1
+    Description:    Functions for toggling restaurant descriptions
+*/
+
 var infoOpen = false;
 
 // Closes a restaurant's info
