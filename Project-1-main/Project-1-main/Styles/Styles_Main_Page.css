@@ -1,0 +1,222 @@
+/*
+ *CSS file used with the home page
+ * AUTHORS: Marcus Carnes,
+            Alex Mallett,
+            Aman Khan,
+            Oluwaseyi Ayo-Anjorin,
+            Jan Veintidos
+ *
+ */
+
+body 
+{
+    display: block;
+    margin: 0;
+    background-color: black;
+    font-family: bignoodletitling;
+}
+
+/*Header*/
+.wrapper
+{
+    width: 1170px;
+    margin: 0 auto;
+}
+
+header
+{
+    height: 100px;
+    background: black;
+    width: 100%;
+    z-index: 12;
+    position: fixed;
+}
+
+.logo
+{
+    float: left;
+}
+
+nav
+{
+    float: right;
+    line-height: 100px;
+}
+
+nav a
+{
+    text-decoration: none;
+    font-family: bignoodletitling;
+    letter-spacing: 4px;
+    font-size: 20px;
+    margin: 0 10px;
+    color: #d8a910;
+}
+
+nav a:hover
+{
+    transition: 1s;
+    text-shadow: #ffde72 0 0 1.5em;
+}
+/*Makin' it look GOOOOOOOOD*/
+.banner
+{
+    background-image: url(https://images.pexels.com/photos/826282/pexels-photo-826282.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+    padding: 20vh 0;
+    background-size: cover;
+    /*text-align: center;*/
+    position: relative;
+    font-weight: 900;
+    color: rgb(0, 0, 0);
+}
+
+.banner > *
+{
+    z-index: 10;
+    position: relative;
+}
+.banner::after
+{
+    content: ""; /*after requires content in order to function*/
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: .7;
+    z-index: 0;
+}
+
+.banner h3
+{
+    font-size: 60px;
+    margin-bottom: 10px;
+    margin-left: 12rem;
+}
+
+.banner p
+{  
+    font-size: 28px;
+    margin-left: 12rem;
+}
+
+
+#ameneties
+{
+    background-color:bisque;
+}
+
+/*Image*/
+
+.image_left 
+{
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 1%;
+}
+
+.image_left div 
+{
+    display: flex;
+    flex-direction: column;
+    padding: 0px 32px 0px 32px;
+}
+
+.image_left h3 
+{
+    margin-bottom: 0;
+    padding: 0;
+    font-size: 2rem;
+}
+
+.image_left p 
+{
+    text-align: justify;
+    padding: 0;
+    font-size: xx-large;
+}
+
+.thumbnail
+{
+    max-width: 100%;
+    height: 350px;
+    width: 400px;
+}
+
+/*Management*/
+
+.management
+{
+    display: block;
+    align-items: center;
+}
+
+.hotel
+{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+}
+
+.management div 
+{
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0px 32px 0px 32px;
+}
+.management h3 
+{
+    margin-bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;
+    font-size: 2rem;
+}
+
+.management p 
+{
+    text-align: center;
+    padding: 0;
+    font-size: xx-large;
+}
+
+/*footer*/
+
+footer 
+{
+    padding: 1.5rem 0;
+    
+    color: #886b0d;
+    text-align: center;
+    font-size: 2rem;
+
+    position: relative;
+}
+
+footer a
+{
+    color: #886b0d;
+    text-emphasis: bold;
+    text-decoration: none;
+}
+
+footer a:hover 
+{
+    transition: 1s;
+    text-shadow: #ffce2f 0 0 2em;
+}
+
+footer ul
+{
+    padding: 1rem;
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+
+    position: relative;
+}

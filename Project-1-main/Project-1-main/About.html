@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 20%;
+  height:10%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+}
+
+.about-section {
+  padding: 50px;
+  text-align: center;
+  Background-color:black;
+  color: #F3BB06;
+  
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: red;
+  Style: italic;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: green;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="about-section">
+  <h1 >About Us </h1>
+  <p >At Bingus Hotels And Resorts, we provide the facility to book different hotels and resorts on customer request.  </p>
+  <p></p>
+</div>
+
+<h2 style="text-align:center">Meet the Team</h2>
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="Images/aman.jpg" alt="Aman" style="width:220px;height:180px;">
+      <div class="container">
+        <h2>Aman Khan</h2>
+        <p style="font-size:20px"class="title">Lead Developper</p>
+        <p style="font-size:16px">“If you don’t like to read, you haven’t found the right book -J.K. Rowling and the famous thoughts.”</p>
+<p style="font-size:16px">
+        <p style="font-size:15px">msu-akhan4@mcneese.edu</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="Images/avatar.jpeg" alt="Alex" style="width:220px;height:180px;">
+      <div class="container">
+        <h2>Alex Mallet</h2>
+        <p class="title">Project Manager</p>
+        <p style="font-size:16px">“The Best Way To Get Started Is To Quit Talking And Begin Doing.” – Walt Disney and other Unknown</p>
+        <p style="font-size:15px">msu-amallet2@mcneese.edu</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+  
+
+<div class="column">
+    <div class="card">
+      <img src="Images/avatar.jpeg" alt="Marcus" style="width:220px;height:180px;">
+      <div class="container">
+        <h2>Marcus Carnes</h2>
+        <p class="title">Lead Designer</p>
+        <p style="font-size:16px">“That’s the thing about books. They let you travel without moving your feet.-Unknown quote”
+</p>
+        <p style="font-size:15px">msu-mcarnes@mcneese.edu</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+
+<div class="column">
+    <div class="card">
+      <img src="Images/avatar.jpeg" alt="Olu" style="width:220px;height:180px;">
+      <div class="container">
+        <h2>Oluwaseyi Ayo-Anjorin</h2>
+        <p class="title">Content Producer </p>
+        <p style="font-size:16px">“Don’t Let Yesterday Take Up Too Much Of Today.” –Rogers
+        <p style="font-size:15px">msu-oayoanjorin@mcneese.edu</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="card">
+      <img src="Images/avatar.jpeg" alt="Jan"style="width:220px;height:180px;">
+      <div class="container">
+        <h2>Jan Veintidos</h2>
+        <p class="title">Q/A Lead</p>
+        <p style="font-size:16px">“It’s Not Whether You Get Knocked Down, It’s Whether You Get Up.”- Mahatma Gandhi</p>
+        <p style="font-size:14px">msu-jveintidos@mcneese.edu</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

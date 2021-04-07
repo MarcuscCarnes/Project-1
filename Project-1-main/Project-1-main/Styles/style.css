@@ -1,0 +1,87 @@
+html
+{
+	height: 100%;
+}
+
+body
+{
+    background-color: tan;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+header
+{
+    height: 200px; 
+   text-align: center; 
+   margin-bottom: 20px;
+}
+
+nav
+{
+    background-color: rgba(0, 0, 0, 0.37);
+    text-align: center;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    
+}
+
+nav a
+{
+    color: rgb(170, 170, 170);
+    margin: 60px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: small;
+}
+
+h2
+{
+	text-align: center;
+}
+
+p
+{
+	text-align: center;
+	font-size: 28px; 
+}
+
+div h1
+{
+	color: red;
+}
+
+h1
+{
+	text-align: center;
+}
+
+h3
+{
+	text-align: center;
+	padding-top: 50px;
+}
+
+button 
+{
+	text-align: center;
+}
+
+footer
+{
+    background-color: rgba(0, 0, 0, 0.575);
+    text-align: center;
+    padding-bottom: 50px;
+    width: 100%;
+    
+}
+
+footer p 
+{
+    font-size: small;
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(170, 170, 170);
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
