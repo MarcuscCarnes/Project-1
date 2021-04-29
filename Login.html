@@ -1,97 +1,59 @@
+
+
+<!--Author : Aman Khan
+    CSCI426 
+    project 2--->
+
 <!DOCTYPE html>
+<html lang="en">
+<head>
 
-<!--Author: Aman Khan-->
+    <!-- This section is for the login here -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Here</title>
+    <link rel="stylesheet" href="Styles/LoginStyle.css">
+</head>
+<body>
+    
+    <!--for the left section container -->
+    <section class="left-section">
+        <div id="left-cover" class="cover cover-hide">
+            <img src="Images/logo.png " alt="">
+            <h1></h1>
+            <h3>Welcome Back Here!</h3>
+            <button type="button" class="switch-btn" onclick="location.reload()">Login</button>
+        </div>
+        <div id="left-form" class="form fade-in-element">
+            <h1>Login Here !</h1>
+            <form action="login.php" method="post">
+                <input type="text" name="user-name" class="input-box" placeholder="User Name">
+                <input type="password" name="user-pass" class="input-box" placeholder="Password">
+                <input type="submit" name="login-btn" class="btn" value="Login">
 
-<html>
-<!--This section is for login page-->
-	<head>  
-	
-		<meta name="viewport" content="width=device-width, initial-scale=1">  
-	
-		<title> Loginpage </title>
-		
-		<style>   
-			/* for header1 */
-			h1 {
-				color: white;
-			}
-			/* for header2 */
-			h2{
-				color :yellow;
-			}
-			/* for label */
-			label {
-				color: BLACK;
-			}
-			/* for body */
-			body {
-				font-family: Calibri, Helvetica, sans-serif;  
-				background-color: BLACK;  
-			} 
-			/* for button affect */
-			button {   
-				background-color: GREEN;   
-				width: 100%;  
-				color: WHITE;   
-				padding: 15px;   
-				margin: 10px 0px;   
-				border: none;   
-				cursor: pointer;   
-			}   
-			/* for form */
-			form {   
-				border: 1px solid red;   
-			}   
-			/* for password */
-			input[type=text], input[type=password] {   
-				width: 100%;   
-				margin: 8px 0;  
-				padding: 12px 20px;   
-				display: inline-block;   
-				border: 2px solid black;   
-				box-sizing: border-box;      
-			} 
-			/* for button hover affect */
-			button:hover {   
-				opacity: 0.9;   
-			}   
-			/* for login button */
-			.loginbtn{
-				color : green;
-			}
-			/* for cancelbutton */
-			.cancelbtn {   
-				width: auto;   
-				padding: 10px 18px;  
-				margin: 10px 5px;  
-				color:white;
-				background-color:red;
-			}   
-		 /* for containder affect */
-			.container {   
-				padding: 40px;  
-				background-color: white;  
-			}   
-		
-		</style>   
-	</head> 
-	<!--- This section is for the login contents like username, password, and cancel button-->
-	<body>    
-<center><img src="Images/logo.png" alt="logo"style="width:325px;height:200px;"></center>
-		<center> <h1> Welcome Back! </h1> </center>   
-		<center> <h2>  Login Here</h2> </center>   
-		<form>  
-			<div class="container">   
-				<label>Username : </label>   
-				<input type="text" placeholder="Enter Username" name="username" required>  
-				<label>Password : </label>   
-				<input type="password" placeholder="Enter Password" name="password" required>  
-				<button type="submit">Login</button>   
-				<input type="checkbox" checked="checked"> Remember me   
-				<button type="button" class="cancelbtn"> Cancel</button>   
-				Forgot <a href="#"> password? </a>   
-			</div>   
-		</form>  
-	
-	</body>  
-</html>  
+            </form>
+        </div>
+    </section>
+
+    <section class="right-section">
+        <div id="right-cover" class="cover fade-in-element">
+            <img src="Images/logo.png" alt="">
+           
+            <h3>Wanna Join ?</h3>
+            <button type="button" class="switch-btn" onclick="switchSignup()">Signup</button>
+        </div>
+        <div id="right-form" class="form form-hide">
+            <h1>Sign Up Here !</h1>
+            <form action="signup.php" method="post">
+                <input type="text" name="user-name" class="input-box" placeholder="User Name">
+                <input type="email" name="user-email" class="input-box" placeholder="Email">
+                <input type="password" name="user-pass" class="input-box" placeholder="Password">
+                <input type="submit" name="signup-btn" class="btn" value="Signup">
+            </form>
+        </div>
+    </section>
+
+    <script src="JavaScripts/main.js"></script>
+
+</body>
+</html>
+

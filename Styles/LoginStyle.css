@@ -1,0 +1,203 @@
+/* Author : Aman Khan
+    CSCI426 
+    Date: 04/21/2021 */
+
+/*for styling the box */
+* {
+    box-sizing: border-box;
+}
+
+/*this section is for styling the body */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI';
+    font-size: 25px;
+}
+
+/*for styling the form input */
+.form input {
+    min-width: 400px;
+    display: block;
+    margin: 20px;
+    padding: 15px 20px;
+    background-color: #ece7e7;
+    font-size: 20px;
+    border: none;
+    outline: none;
+    font-size: 22px;
+    box-shadow: 15px 15px 25px #a8a8a8;
+    transition: box-shadow 0.5s;
+}
+/* for input focus  */
+.form input:focus {
+    box-shadow: 5px 5px 15px #a8a8a8;
+}
+
+/*this section is for styling the form button */
+.form .btn {
+    margin: auto;
+    padding: 10px 35px;
+    background-color: #f1a566;
+    color: #fff;
+    border: none;
+    font-size: 22px;
+    border-radius: 10px;
+    box-shadow: 15px 15px 25px #a8a8a8;
+    transition: box-shadow 0.5s;
+    outline: none;
+}
+
+/* For hover affect */
+.form .btn:hover {
+    box-shadow: 5px 5px 15px #aaa;
+}
+
+/* for form styling */
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 50vh;
+    width: 50vw;
+    position: absolute;
+    bottom: 0px;
+    font-size: 35px;
+}
+/* for left section styling */
+.left-section .form {
+    float: left;
+    margin: 35vh auto;
+}
+
+/*for right section styling */
+.right-section .form {
+    float: right;
+    right: 0;
+    margin: 30vh auto;
+}
+
+/* for switch affect on the button */
+.cover .switch-btn {
+    position: absolute;
+    bottom: 0;
+    font-size: 25px;
+    margin: 40vh auto;
+    padding: 10px 55px;
+    background-color:green;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    box-shadow: 15px 15px 25px #a8a8a8;
+    transition: box-shadow 0.5s;
+    outline: none;
+}
+
+/* for the hover affect on switch button */
+.cover .switch-btn:hover {
+    box-shadow: 5px 5px 15px yellow;
+}
+
+/* for stylin the left-section */
+.left-section .cover {
+    float: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* for sytyling the left section of cover image */
+.left-section .cover img {
+    height: 100vh;
+    width: 50vw;
+}
+
+/* for styling the header items of left section */
+.left-section .cover h1 {
+    position: absolute;
+    vertical-align:top;
+    bottom: 0px;
+    margin: 60vh auto;
+    color: yellow;
+    font-size: 25px;
+}
+
+/* This section is for header of left-section */
+.left-section .cover h3 {
+    position: absolute;
+    bottom: 0px;
+    margin: 50vh auto;
+    color: white;
+    font-size: 28px;
+}
+
+/* hide affects of left-section */
+.left-section .cover-hide {
+    visibility: hidden;
+}
+
+/* for form to hide */
+.left-section .form-hide {
+    visibility: hidden;
+}
+
+/* for the cover of right section */
+.right-section .cover {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* for the cover image in right section */
+.right-section .cover img {
+    height: 100vh;
+    width: 50vw;
+}
+
+/* This section is for the header1 of the right section */
+.right-section .cover h1 {
+    position: absolute;
+    bottom: 0px;
+    margin: 60vh auto;
+    color: red;
+    font-size: 50px;
+}
+
+/* This section is for the header3 of the right section */
+.right-section .cover h3 {
+    position: absolute;
+    bottom: 0px;
+    margin: 50vh auto;
+    color: #fff;
+    font-size: 35px;
+}
+
+/* for the hide affect on right section */
+.right-section .cover-hide {
+    visibility: hidden;
+}
+
+/*for the right section hide of form */
+.right-section .form-hide {
+    visibility: hidden;
+}
+
+/* this section is for the animation affect */
+.fade-in-element {
+    animation-name: fade-in-element;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fade-in-element {
+    from {
+        opacity: 0;
+    }
+  
+    to {
+        opacity: 1;
+    }
+}
